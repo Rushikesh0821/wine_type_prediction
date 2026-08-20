@@ -9,7 +9,7 @@ Original file is located at
 
 import streamlit as st
 import pandas as ps
-import loblib
+import joblib
 
 model= joblib.load("wine_type_prediction.pk")
 st.title(" Wine Type Prediction !")
