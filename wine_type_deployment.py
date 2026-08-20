@@ -9,7 +9,7 @@ Original file is located at
 
 import streamlit as st
 import pandas as ps
-import loblib
+import joblib
 
 model= joblib.load("wine_type_prediction.pk")
 st.title(" Wine Type Prediction !")
@@ -43,10 +43,10 @@ df= ps.DataFrame({
 })
 
 if st.button("Predict"):
-    prediction= model.predict(df)[0]
+    prediction= model.predict(df)
 
     if prediction==0:
         st.write("The wine is red")
     else:
         st.write("The wine is white")
-    st.write(f'the predicted wine type is: (prediction[0]))
+  
