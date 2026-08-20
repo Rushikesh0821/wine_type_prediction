@@ -49,4 +49,4 @@ if st.button("Predict"):
         st.write("The wine is red")
     else:
         st.write("The wine is white")
-    st.write(f'the predicted wine type is: (prediction[0]))
+    
