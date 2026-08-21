@@ -43,7 +43,7 @@ df= ps.DataFrame({
 })
 
 if st.button("Predict"):
-    prediction= model.predict(df)
+    prediction= model.predict(df)[0]
 
     if prediction==0:
         st.write("The wine is red")
